@@ -1,0 +1,29 @@
+
+/*Same code is used as internal css as external file was not getting linked.*/
+
+
+.centered-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust the height of the form container */ 
+  }
+  .login-form {
+    /*background-color: rgba(255, 255, 255, 0.7);*/
+    background-color: transparent;
+    padding: 80px;
+    border-radius: 10px;
+    width: 400px; /* Increase width of the form */
+    max-width: 80%;
+  }
+  .form-control {
+    background-color: transparent !important; /* Override Bootstrap background color */
+    border-color: #571f8e !important; /* Override Bootstrap border color */
+    border-width: 3px;
+    color: #571f8e !important; /* Override Bootstrap text color */
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .form-control::placeholder {
+    color: #FFFFFF;
+  }

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="utf-8"/>
+        <link rel = "icon" href = "Images/Logo/favicon-32x32.png"?>
+        <meta name="viewport" content = "width=device-width, initial-scale = 1.0" ?>
+        <meta
+            name = "description" />
+            <title>VOID</title>
+
+    <!--CSS files-->
+    <link rel = "stylesheet" href ="/CSS files/index.css" />
+    <link rel = "stylesheet" href ="/CSS files/Home-Page/navbar.css" />
+    <!-- <link rel = "stylesheet" href ="/CSS files/Home-Page/login.css" /> -->
+    <link rel = "stylesheet" href ="/CSS files/Home-Page/about.css" />
+    <link rel = "stylesheet" href ="/CSS files/Home-Page/contact.css" />
+    <link rel = "stylesheet" href ="/CSS files/Home-Page/footer.css" />
+    <link rel = "stylesheet" href ="/CSS files/Home-Page/signin.css" />
+    <script src="/JS Files/sign-in.js" type="text/javascript"></script>
+
+    <!--Bootstrap cdns-->
+    <link 
+        href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel = "stylesheet" />
+        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        <!--JQuery cdn-->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <style>
+    .centered-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust the height of the form container */ 
+  }
+  .login-form {
+    /*background-color: rgba(255, 255, 255, 0.7);*/
+    background-color: transparent;
+    padding: 80px;
+    border-radius: 10px;
+    width: 400px; /* Increase width of the form */
+    max-width: 80%;
+  }
+  .form-control {
+    background-color: transparent !important; /* Override Bootstrap background color */
+    border-color: #571f8e !important; /* Override Bootstrap border color */
+    border-width: 3px;
+    color: #571f8e !important; /* Override Bootstrap text color */
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .form-control::placeholder {
+    color: #FFFFFF;
+  }
+  .btn{
+    background-color:black;
+    border-color: #571f8e;
+    border-radius: 20px;
+    width: 200px; /* Increase width of the form */
+    height:50px;
+    border-width: 3px;
+    /*margin-left:65px;*/
+    /*margin-right: 100px;*/
+  }
+
+  #nav-main{
+    text-decoration: none;
+    color:#FFFFFF;
+  }
+    </style>
+    </head>
+
+        <body>
+            <video id="video-background" autoplay muted loop>
+                <source src="/Images/sv1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+              <!--Title-->
+              <section>
+              <div id="title" style="justify-content: center; margin-left: 250px;">
+                <p id="title-page" style="font-size:450px; color:#FFFFFF;"><a id="nav-main" class="void" href="#navigation-bar">VOID</a></p>
+              </div>
+              </section>
+            
+            <!--Navbar-->
+            <nav id="navigation-bar" class = "container-fluid">
+               <!--Logo-->
+               <label class = "logo">
+                <img
+                    class = "logo-img"
+                    src = "/Images/Logo/favicon-32x32.png"
+                    alt = ""/>VOID
+               </label>
+               <!--icon-->
+               <label id = "hamburger">
+                <i class="fas fa-bars"></i>
+               </label>
+               <!--Menu List-->
+               <ul id = "nav-menu" class="nav-menu">
+                <li class="menu"><a id="nav-Home" class="menu-item" href="#about-us">About Us</a></li>
+                <li class="menu"><a id="nav-Contact-us" class="menu-item" href="#signin">Sign In/ Sign Up</a></li>
+                <li class="menu"><a id="nav-About-us" class="menu-item" href="#contact-us">Contact Us</a></li>
+               </ul>
+            </nav>
+
+            <!--Login Section-->
+            <!-- <div class = "container login-section"> -->
+
+                <!--Login area-->
+                <!-- <div id = "sign-in" class="login-cluster"> -->
+
+                    <!--Teacher-->
+                    <!-- <div id = "teacher-login" class="login-box" onclick="teacherSignIn()">
+                    <img 
+                        class = "login-vector"
+                        src = "/Images/Login Vectors/Teacher.png"
+                        alt = ""
+                        />
+                        <p class="login-text">PROFESSOR</p>
+                    </div> -->
+                    <!--Student-->
+                    <!-- <div id="student-login" class="login-box" onclick="studentSignIn()">
+                    <img
+                        class = "login-vector"
+                        src = "/Images/Login Vectors/Student.png"
+                        alt = ""/>
+                        <p class="login-text">STUDENT</p>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!--About Us Section-->
+            <div id = "about-us-section" class="container">
+
+                <!--Heading-->
+                <p id="about-us" class="section-heading">ABOUT US</p>
+
+                <!--About Section-->
+                <div class="about-section">
+                    <!--About Image-->  
+                    <!-- <img id="about-vector" src="/Images/About Vector/About.png" alt="" /> -->
+
+                    <!--About Content-->
+                    <div class="about content">
+                        <div class="about-heading" style="font-family:Times New Roman; color:#FFFFFF;">Automated Interview System</div>
+                        <div class="about-body" style="font-family:Times New Roman; color:#FFFFFF;">
+                            Welcome to Void, where cutting-edge AI, ML,<br> and blockchain technologies converge to<br> automate interviews. Our platform revolutionizes<br> hiring with AI-powered interviews, personalized<br> experiences, and blockchain-backed security.<br> Experience efficient, fair, and transparent<br> recruitment processes. Join us in shaping<br> the future of interviews and recruitment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sign-In/Sign-Up-->
+     <div id="signin" class="centered-form" style="justify-content: flex-end;">
+        <!-- <form class="login-form" method = "post"> -->
+          <h1 class="text-center mb-4" style="color:#FFFFFF; text-align: left; font-size: 100px; margin-right: 90px;">Void</h1><br>
+          </div>
+          <!-- <div class="form-group opacity-0">
+            <input type="text" class="form-control" placeholder="Username">
+          </div>
+          <div class="form-group opacity-0">
+            <input type="password" class="form-control opacity-0" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block opacity-0">Login</button> -->
+          <!-- <input type="text" class="form-control" placeholder="Username">
+          <input type="password" class="form-control" placeholder="Password"> -->
+          
+    <div id="signin" class="centered-form" style="justify-content: flex-end; margin-right: 90px;">
+          <button class="btn btn-primary btn-block" onclick = "signIn()">Sign In</button>
+        <!-- </form> -->
+      </div>
+
+            <!--Contact Us Section-->
+        <div id = "contact-us" class="container" style="justify-content: flex-start;">
+
+            <!--Heading-->
+            <p id = "contact-us" class="section-heading">CONTACT US</p>
+            <!-- <div class = "contact-section"> -->
+            <!--Contact Info Section-->
+            <!-- <div class = "contact-info" style="text-align: right;"> -->
+                <!-- <p class="contact-info-heading">Contact Information</p> -->
+                <!-- <p class="contact-info-sub-heading">
+                    Fill up the form and our team will get back to you in 24 hours.
+                </p> -->
+                <div class = "contact-info-type" width="18px" height = "18px">
+                    <img
+                        src="/Images/Contact Icons/Telephone.png"
+                        alt=""
+                        class="contact-info-icon"
+                    />
+                    <p class = "contact-info-value">+91 6305975657</p>
+                </div>
+                <div class = "contact-info-type">
+                    <img
+                        src="/Images/Contact Icons/Email.png"
+                        width="20px"
+                        height="16px"
+                        alt=""
+                        class="contact-info-icon"
+                    />
+                    <p class="contact-info-value">Hyderabad,Telangana</p>
+                </div>
+            </div>
+
+            <!--Contact  Form-->
+            <!-- <div id = "contact-form" class="contact-form">
+                <div class = "form-box">
+                    <div class="input-box w50">
+                        <input id="contact-fname" id= "contact-fname" class="input" type="text" required>
+                        <span class="input-name">First Name</span>
+                    </div>
+                    <div class="input-box w50">
+                        <input id="contact-lname" id = "contact-lname" class="input" type="text" required>
+                        <span class="input-name">Last Name</span>
+                    </div>
+                    <div class="input-box w50">
+                        <input id="contact-email" id = "contact-email" class="input" type="text" required>
+                        <span class="input-name">Email Id</span>
+                    </div>
+                    <div class="input-box w50">
+                        <input id="contact-phone" id = "contact-phone" class="input" type="text" required>
+                        <span class="input-name">Phone no.</span>
+                    </div>
+                    <div class="input-box w100">
+                        <input id="contact-msg"  id = "contact-msg" class="input" type="text" required>
+                        <span class="input-name">Write your message here...</span>
+                    </div>
+                    <div class = "input-box w100">
+                        <input class="input input-btn" type="reset" value = "Submit" onclick = "submit()">
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div> -->
+     </div>
+    <div class = "container-fluid footer">
+
+            <!-- JS file -->
+            <!-- <script src = "/JS Files/index.js"></script> -->
+    </div>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    /*background-image: url('/Images/background.jpg');*/
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; 
+  }
+  .page-border{
+    border: 3px solid #571f8e;
+    margin:20px;
+    /* border-radius: 20px; */
+    height: calc(100% - 40px); /* Adjust the height to account for the border size */
+    width: calc(100% - 40px);
+    justify-content:center;
+    position:relative;
+  }
+  .video-cap {
+    position: absolute; /* Position relative to the .page-border container */
+    bottom: 10px; /* Adjust as needed to position the icon */
+    left: 7%; /* Center the icon horizontally */
+    transform: translateX(-50%); /* Adjust to center the icon horizontally */
+}
+  .video-cap img{
+    width:190px;
+    height:130px;
+  }
+  .btn{
+    background-color:black;
+    border-color: #571f8e;
+    border-radius: 20px;
+    width: 200px; /* Increase width of the form */
+    height:50px;
+    border-width: 3px;
+    /*margin-left:65px;*/
+    /*margin-right: 100px;*/
+    position: absolute; /* Position relative to the .page-border container */
+    bottom: 10px; /* Adjust as needed to position the icon */
+    right: 2%; /* Center the icon horizontally */
+    /*transform: translateX(-50%); /* Adjust to center the icon horizontally */
+  }
+  .mic {
+    position: absolute; /* Position relative to the .page-border container */
+    bottom: 10px; /* Adjust as needed to position the icon */
+    left: 50%; /* Center the icon horizontally */
+    transform: translateX(-50%); /* Adjust to center the icon horizontally */
+}
+  .mic img{
+    width:80px;
+    height:100px;
+  }
